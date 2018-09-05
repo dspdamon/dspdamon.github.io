@@ -74,3 +74,5 @@ getDesireMaxFileSize() 为10GB， 配置为"hbase.hregion.max.filesize"
 1. 建议将每个表的预分区调整为region server的节点数，以便region更加均匀分布，提升读写性能。
 
 2. 建议将hbase.increasing.policy.initial.size调整大于90%数据表的平均预分的region大小，以便大部分的数据表region能够按照预期的分区数增长
+
+> https://issues.apache.org/jira/browse/HBASE-12451
